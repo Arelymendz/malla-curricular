@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #ff66b2;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+#uv-total {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.subject {
+  background-color: #ffcce0;
+  border: 2px solid #ff66b2;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.subject:hover {
+  background-color: #ff99cc;
+}
+
+.subject.approved {
+  background-color: #d81b60;
+  color: white;
+  border-color: #ad1457;
+  text-decoration: line-through;
+  cursor: default;
+}
+
+.subject.locked {
+  opacity: 0.4;
+  pointer-events: none;
+}
